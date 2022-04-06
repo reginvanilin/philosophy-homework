@@ -1,0 +1,14 @@
+.header {
+    height: 70px;
+    background-color: rgb(208, 167, 247);
+}
+.header-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+.header-links-link {
+    font-family: "century gothic";
+    font-size: 25px;
+}
