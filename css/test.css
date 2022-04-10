@@ -1,17 +1,12 @@
-
 * {
     font-family: "century gothic";
-   
 }
 
 body {
     background-color: rgb(237, 183, 255);
     padding: 10px;
 }
-.test-card {
 
-    
-}
 .test {
     font-family: "century gothic";
     display: flex;
@@ -25,13 +20,12 @@ body {
     margin: 3vw;
     height: 500px;
     box-shadow: 10px 5px 5px rgb(255, 241, 91);
-    
 }
+
 .test-question {
     font-size: 22px;
-    
-
 }
+
 .test-choiсe {
     display: flex;
     flex-direction: row;
@@ -40,39 +34,33 @@ body {
     max-width: 500px;
     margin: 0 auto;
     margin-top: 30px;
-    cursor: pointer;
-    
 }
-.test-choise-yes {
+
+.test-button {
     border: none;
-    font-size: 20px;
-    margin-right: 30px;
-    padding: 10px;
-    background-color: rgb(151, 252, 183);
-    border-radius: 30px;
     width: 100px;
-    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
     transition: background-color 0.5s;
-   
-    
+    cursor: pointer;
+}
+
+.test-choise-yes {
+    margin-right: 30px;
+    background-color: rgb(151, 252, 183);
 }
 
 .test-choise-yes:hover {
     background-color: rgb(91, 252, 142);
 }
+
 .test-choise-no {
-    width: 100px;
-    border: none;
-    font-size: 20px;
-    padding: 10px;
     background-color: rgb(255, 163, 141);
-    border-radius: 30px;
-    transition: background-color 0.5s;
 }
 
 .test-choise-no:hover {
     background-color: rgb(252, 120, 88);
-
 }
 
 .test-result {
@@ -80,6 +68,7 @@ body {
     margin-top: 15px;
     margin-bottom: 10px;
 }
+
 .test-description {
     font-size: 20px;
 }
