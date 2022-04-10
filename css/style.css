@@ -208,8 +208,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 3vw;
-    padding-top: 20px;
+    padding: 0px 3vw;
+    margin-top: 20px;
     
 }
 
@@ -218,6 +218,7 @@ body {
     padding: 15px 3vw;
     border-radius: 30px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .plan-work-cards-card:hover {
@@ -231,6 +232,31 @@ body {
 .plan-work-cards-card-text {
     font-size: 20px;
 }
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+}
+.test-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 100px;
+    background-color: rgb(220, 186, 252);
+    width: 300px;
+    height: 90px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.test-button:hover {
+    background-color: rgb(206, 153, 255);
+}
+
+
 @media (max-width: 425px) {
 
     .determination-title {
