@@ -9,18 +9,24 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <header class="header">
-            <div class="header-links">
-                <a class="header-links-link">Главная</a>
-                <a class="header-links-link">Типы мышления</a>
-                <a class="header-links-link">Характеристики</a>
-                <a class="header-links-link">Виды абстракций</a>
-                <a class="header-links-link">Формы мышления</a>
-                <a class="header-links-link">Примеры</a>
-                <a class="header-links-link">План развития</a>
-            </div>
-        </header>
-        <div class="determination">
+        <div class="burger-menu" id="burger-menu">
+            <a href="#" class="burger-menu-button" id="burger-menu-button">
+              <span class="burger-menu-lines"></span>
+            </a>
+        
+            <nav class="burger-menu-nav">
+              <a href="#determination" class="burger-menu-link">Главная</a>
+              <a href="#types" class="burger-menu-link">Типы мышления</a>
+              <a href="#characteristic" class="burger-menu-link">Характеристики</a>
+              <a href="#abstractions" class="burger-menu-link">Виды абстракций</a>
+              <a href="#forms" class="burger-menu-link">Формы мышления</a>
+              <a href="#plan-work" class="burger-menu-link">План развития</a>
+              <a href="#test" class="burger-menu-link">Тест</a>
+            </nav>
+            <div class="burger-menu-overlay" id="burger-menu-overlay"></div>
+        </div>
+        
+        <div class="determination"  id="determination">
             <h2 class="determination-title">Системное мышление</h2>
             <p class="determination-subtitle">
                 <b>Системное мышление</b> — это практический подход к восприятию
@@ -30,7 +36,7 @@
                 теорий
             </p>
         </div>
-        <div class="types">
+        <div class="types" id="types">
             <h1 class="types-main-title">Типы системного мышления</h1>
             <a class="types-title">Предметно-действенное мышление</a>
             <div class="types-subtitle">
@@ -75,7 +81,7 @@
                 </p>
             </div>
         </div>
-        <div class="characteristic">
+        <div class="characteristic" id="characteristic">
             <h2 class="characteristic-title">
                 Характеристики человека, владеющим абстрактно-символическим
                 мышлением
@@ -98,7 +104,7 @@
                 <li>соединение разрозненных сведений в общую картину.</li>
             </ol>
         </div>
-        <div class="abstractions">
+        <div class="abstractions" id="abstractions">
             <h2 class="abstractions-title">Виды абстракций</h2>
             <p class="abstractions-text">
                 Как вы помните, абстрактно-логическое мышление предполагает
@@ -152,7 +158,7 @@
                 </p>
             </div>
         </div>
-        <div class="forms">
+        <div class="forms" id="forms">
             <h2 class="forms-title">Формы абстрактного мышления</h2>
             <div class="forms-cards">
                 <div class="forms-cards-card">
@@ -230,7 +236,7 @@
                 </div>
             </div>
         </div>
-        <div class="plan-work">
+        <div class="plan-work" id="plan-work">
             <h2 class="plan-work-title">Как развивать системное мышление</h2>
             <div class="plan-work-cards">
                 <div class="plan-work-cards-card">
@@ -327,5 +333,6 @@
         <a class="test-button" href="test.html" id="test">Перейти к тесту</a>
     </div>
         <script src="js/script.js"></script>
+        <script src="js/burger.js"></script>
     </body>
 </html>

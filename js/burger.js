@@ -1,26 +1,22 @@
-function burgerMenu(selector) {
-    let menu = $(selector);
-    let button = menu.find('.burger-menu_button', '.burger-menu_lines');
-    let links = menu.find('.burger-menu_link');
-    let overlay = menu.find('.burger-menu_overlay');
-    
-    button.on('click', (e) => {
-      e.preventDefault();
-      toggleMenu();
-    });
-    
-    links.on('click', () => toggleMenu());
-    overlay.on('click', () => toggleMenu());
-    
-    function toggleMenu(){
-      menu.toggleClass('burger-menu_active');
-      
-      if (menu.hasClass('burger-menu_active')) {
-        $('body').css('overlow', 'hidden');
-      } else {
-        $('body').css('overlow', 'visible');
-      }
+const burgerMenu = document.getElementById("burger-menu");
+const navLinks = document.getElementsByClassName("burger-menu-link");
+const overlay = document.getElementById("burger-menu-overlay");
+const burgerButton = document.getElementById("burger-menu-button");
+
+const toggleMenu = () => {
+    const activeClass = "burger-menu-active";
+    if (burgerMenu.classList.contains(activeClass)) {
+        burgerMenu.classList.remove(activeClass);
+        document.body.style.overflow = "visible";
+    } else {
+        burgerMenu.classList.add(activeClass);
+        document.body.style.overflow = "hidden";
     }
-  }
-  
-  burgerMenu('.burger-menu');
+};
+
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener('click', toggleMenu);
+}
+
+burgerButton.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);

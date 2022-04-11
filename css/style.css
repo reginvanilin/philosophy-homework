@@ -3,6 +3,100 @@ body {
    
     
 }
+
+.burger-menu {
+}
+.burger-menu-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 30;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background-color: #d294f4;
+}
+
+
+
+.burger-menu-lines,
+.burger-menu-lines::after,
+.burger-menu-lines::before {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+}
+
+.burger-menu-lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.burger-menu-lines::before {
+    content: '';
+    top: -12px;
+}
+.burger-menu-lines::after {
+    content: '';
+    top: 12px;
+}
+.burger-menu-active .burger-menu-lines {
+    background-color: transparent;
+}
+
+.burger-menu-active .burger-menu-lines::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.burger-menu-active .burger-menu-lines::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+.burger-menu-nav {
+    padding-top: 80px;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #af1ffd;
+    overflow-y: auto;
+    left: -100%;
+    transition: left 0.3s;
+}
+.burger-menu-active .burger-menu-nav {
+    left: 0;
+}
+.burger-menu-link {
+    padding: 30px;
+    font: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.burger-menu-link:hover {
+    filter: brightness(0.7);
+}
+.burger-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+
+}
+.burger-menu-active .burger-menu-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
 .header {
     width: 100%;
     background-color: rgb(204, 166, 253);
@@ -232,14 +326,16 @@ body {
 .plan-work-cards-card-text {
     font-size: 20px;
 }
+
 .test {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    
+    height: 500px;  
 }
+
 .test-button {
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,13 +355,14 @@ body {
 
 
 @media (max-width: 425px) {
-
     .determination-title {
         font-size: 25px;
     }
+
     .determination-subtitle {
         font-size: 22px;
     }
+
     .types-main-title{
         font-size: 25px;
     }
