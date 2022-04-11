@@ -50,13 +50,11 @@ const renderQuestion = () => {
 const onYesButton = () => {
   questions[currentStep].picked = true;
   if (currentStep <= questions.length - 1) currentStep++;
-  else console.log(countAnswers())
   renderQuestion();
 }
 
 const onNoButton = () => {
   if (currentStep <= questions.length - 1) currentStep++;
-  else console.log(countAnswers())
   renderQuestion();
 }
 
